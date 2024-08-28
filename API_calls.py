@@ -8,7 +8,8 @@ response = model.generate_content(prompt)
 responses = []
 responses.append({
     "prompt":f"{prompt}",
-    "response":response.text
+    "response":response.text,
+    "source":"gemini"
 })
 with open("output.json","w") as file:
     json.dump(responses,file)
