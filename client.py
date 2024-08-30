@@ -17,7 +17,7 @@ def send_to_server(prompt):
 
 def get_prompt():
     with open("input.txt","r") as read:
-        return [line.strip() for line in f]
+        return [line.strip() for line in read]
 
 def make_json(responses):
     with open("output.json","w") as file:
